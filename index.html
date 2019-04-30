@@ -1,34 +1,207 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      body {
-        color: #696969;
-        background-color: #F8F8FF;
-        
-      }
-    </style>
-    <title>Andreas Westh's Website</title>
-  </head>
-  <body>
-    
-    <h1>Andreas Westh's Website</h1>
-    
-    <p>Hello and welcome to my website, I talk about IT Security and Art (supposedly).</p>
-    <div class="sidebar" style="width:25%">
-    
-      
+    /*
+Website Name: Right Sidebar Layout
+Description: A two column layout with the sidebar on the right for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ddd;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.site {
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* =Elements
+---------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 26px;
+}
+p {
+  margin-bottom: 26px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* =Header
+---------------------------*/
+.site-header {
+  padding: 40px;
+  text-align: center;
+}
+.site-title {
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .site-title {
+    float: left;
+  }
+}
+
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+}
+.site-navigation a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  padding: 0 20px;
+}
+.site-navigation a:hover {
+  color: #4cacbe;
+}
+
+@media (min-width: 800px) {
+  .site-navigation {
+    float: right;
+  }
+  .site-navigation a {
+    padding: 0 0 0 20px;
+  }
+}
+
+/* =Content
+---------------------------*/
+.content-wrapper {
+  padding: 40px;
+}
+.site-content {
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #999;
+}
+.sidebar {
+  padding-top: 40px;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+}
+.widget {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .site-content {
+    width: 70%;
+    float: left;
+    border: none;
+  }
+  .sidebar {
+    width: 30%;
+    float: left;
+    padding-top: 0;
+    text-align: left;
+  }
+  .widget {
+    padding-left: 20px;
+  }
+}
+
+/* =Footer
+---------------------------*/
+.site-footer {
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  padding: 40px;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    clear: both;
+  }
+  .site-footer .column {
+    width: 32%;
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 2%;
+  }
+  .site-footer .column.last {
+    padding-right: 0;
+  }
+}
+
+/* Crafted with love at Sparkbox */
+
+<div class="site">
+  <div class="site-header">
+    <h1 class="site-title">Right Sidebar Template</h1>
+    <div class="site-navigation">
+      <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- .site-navigation -->
+  </div><!-- .site-header -->
+
+  <img src="http://placehold.it/1000X300" alt="Header Image" />
+
+  <div class="content-wrapper">
+    <div class="site-content">
+      <h1>Cupcake Ipsum Dolor</h1>
+
+      <p>Sit amet tootsie roll I love I love I love carrot cake. Cupcake candy icing wafer apple pie muffin powder sugar plum. Marzipan lollipop cake icing. I love chupa chups candy gingerbread I love. Pie brownie dessert chocolate. Marshmallow sweet roll marshmallow jujubes apple pie.</p>
+
+      <p>Brownie gummies chocolate bar icing pie sweet. Candy chupa chups bonbon ice cream I love cookie croissant caramels fruitcake. Chocolate caramels dessert chocolate gummies brownie jelly beans jelly beans cake. Cotton candy tiramisu bear claw dragée chocolate. Cotton candy pastry caramels marshmallow jelly ice cream I love. I love bonbon chupa chups croissant powder. Gingerbread soufflé tiramisu carrot cake. Croissant chupa chups I love danish.</p>
+
+      <p>Bear claw cotton candy powder I love bonbon apple pie. I love soufflé danish cupcake sweet roll. Jujubes danish danish macaroon biscuit I love liquorice halvah sugar plum. Chocolate bar chocolate cake chocolate bar pastry tootsie roll danish chupa chups jujubes. Dragée sweet carrot cake cookie sweet roll. Cake oat cake sweet candy canes. Bear claw ice cream liquorice sweet roll marzipan brownie powder sweet powder. Chocolate cake I love I love I love chocolate cake liquorice I love. Icing carrot cake cake. Donut cheesecake gingerbread pudding tiramisu I love soufflé caramels dessert.</p>
+    </div><!-- .site-content -->
+
+    <div class="sidebar">
+      <div class="widget">
+        <img src="http://placehold.it/300x150" alt="Sidebar Image" />
+      </div>
+
+      <div class="widget">
+        <h3 class="widget-header">Sidebar Section</h3>
+        <p>Sit amet tootsie roll I love I love I love carrot cake. Cupcake candy icing wafer apple pie muffin powder sugar plum. Marzipan lollipop cake icing.</p>
+      </div>
+    </div><!-- .sidebar -->
+  </div><!-- .content-wrapper -->
+
+  <div class="site-footer">
+    <div class="column">
+      <h3>A Column...</h3>
+      <p>Sit amet tootsie roll I love I love I love carrot cake. Cupcake candy icing wafer apple pie muffin powder sugar plum. Marzipan lollipop cake icing.</p>
     </div>
-    <!--<div class="site"> -->
-      <div class="site-header">
-        <h1 class="site-title">Right Sidebar Template</h1>
-        <div class="site-navigation">
-          <ul>
-            <li><a href="itsec.html">IT Security</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div><!-- .site-navigation -->
-      </div><!-- .site-header -->        
-  </body>
-</html>
+
+    <div class="column">
+      <h3>A Column...</h3>
+      <p>Sit amet tootsie roll I love I love I love carrot cake. Cupcake candy icing wafer apple pie muffin powder sugar plum. Marzipan lollipop cake icing.</p>
+    </div>
+
+    <div class="column last">
+      <h3>A Column...</h3>
+      <p>Sit amet tootsie roll I love I love I love carrot cake. Cupcake candy icing wafer apple pie muffin powder sugar plum. Marzipan lollipop cake icing.</p>
+    </div>
+
+    <p>This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.</p>
+  </div><!-- .site-footer -->
+</div><!-- .site -->
