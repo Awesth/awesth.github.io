@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <title>Page Title</title>
 <meta charset="UTF-8">
@@ -9,6 +11,22 @@
   box-sizing: border-box;
 }
 
+/* Font Awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+/* Github */
+.fa-github {
+  color: white;
+}
 body {
   color: #696969;
   background-color: #F8F8FF;
@@ -37,7 +55,7 @@ body {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
+  float: right;
   display: block;
   color: white;
   text-align: center;
@@ -62,16 +80,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  float: right;
-  text-align: left;
-  flex: 30%;
-  background-color: #f1f1f2;
-  padding: 20px;
-}
-
 /* Main column */
 .main {
   color: #696969;
@@ -88,13 +96,6 @@ body {
   padding: 20px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
@@ -108,37 +109,22 @@ body {
 
 <div class="header">
   <h1>Andreas Westh's Blog</h1>
-  <p></p>
+  <a href="https://twitter.com/a_westh" class="fa fa-twitter"></a>
+  <a href="https://github.com/awesth"   class="fa fa-github"></a>
 </div>
 
 <div class="navbar">
+  <a href="#">About</a>
   <a href="#">IT Security</a>
-  <a href="#">Art</a>
-  <a href="#">This and That</a>
 </div>
-
-<div class="row">
-  <div class="side">
-    <h2>About</h2>
-    <p>I spend a lot of time on IT Security.</p>
-      <a href="https://twitter.com/a_westh">Twitter</a>
-      <p></p>
-      <a href="https://github.com/Awesth/">Github</a>
-  </div>
   <div class="main">
-    <h2>A Journey into Editors</h2>
-    <h5></h5>
+    <h2>A Journey Down the Honeypot</h2>
+    <h5>date</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Honeypots.</p>
+    <p>Honeypots is an excellent way to get a deeper understanding about ports and networks in general.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
-</div>
 
 </body>
 </html>
